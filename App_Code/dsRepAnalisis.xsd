@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRepAnalisis" targetNamespace="http://tempuri.org/dsRepAnalisis.xsd" xmlns:mstns="http://tempuri.org/dsRepAnalisis.xsd" xmlns="http://tempuri.org/dsRepAnalisis.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRepAnalisis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRepAnalisis" msprop:Generator_DataSetName="dsRepAnalisis">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAnalisisDetalle" msprop:Generator_UserTableName="dtAnalisisDetalle" msprop:Generator_RowDeletedName="dtAnalisisDetalleRowDeleted" msprop:Generator_TableClassName="dtAnalisisDetalleDataTable" msprop:Generator_RowChangedName="dtAnalisisDetalleRowChanged" msprop:Generator_RowClassName="dtAnalisisDetalleRow" msprop:Generator_RowChangingName="dtAnalisisDetalleRowChanging" msprop:Generator_RowEvArgName="dtAnalisisDetalleRowChangeEvent" msprop:Generator_RowEvHandlerName="dtAnalisisDetalleRowChangeEventHandler" msprop:Generator_TablePropName="dtAnalisisDetalle" msprop:Generator_TableVarName="tabledtAnalisisDetalle" msprop:Generator_RowDeletingName="dtAnalisisDetalleRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GRUPO" msprop:Generator_UserColumnName="GRUPO" msprop:Generator_ColumnPropNameInRow="GRUPO" msprop:Generator_ColumnVarNameInTable="columnGRUPO" msprop:Generator_ColumnPropNameInTable="GRUPOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ACREDITADO" msprop:Generator_UserColumnName="ACREDITADO" msprop:Generator_ColumnPropNameInRow="ACREDITADO" msprop:Generator_ColumnVarNameInTable="columnACREDITADO" msprop:Generator_ColumnPropNameInTable="ACREDITADOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOM_ACREDITADO" msprop:Generator_UserColumnName="NOM_ACREDITADO" msprop:Generator_ColumnPropNameInRow="NOM_ACREDITADO" msprop:Generator_ColumnVarNameInTable="columnNOM_ACREDITADO" msprop:Generator_ColumnPropNameInTable="NOM_ACREDITADOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CICLOA" msprop:Generator_UserColumnName="CICLOA" msprop:Generator_ColumnPropNameInRow="CICLOA" msprop:Generator_ColumnVarNameInTable="columnCICLOA" msprop:Generator_ColumnPropNameInTable="CICLOAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CICLOB" msprop:Generator_UserColumnName="CICLOB" msprop:Generator_ColumnPropNameInRow="CICLOB" msprop:Generator_ColumnVarNameInTable="columnCICLOB" msprop:Generator_ColumnPropNameInTable="CICLOBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CICLOC" msprop:Generator_UserColumnName="CICLOC" msprop:Generator_ColumnPropNameInRow="CICLOC" msprop:Generator_ColumnVarNameInTable="columnCICLOC" msprop:Generator_ColumnPropNameInTable="CICLOCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTENTREA" msprop:Generator_UserColumnName="CANTENTREA" msprop:Generator_ColumnPropNameInRow="CANTENTREA" msprop:Generator_ColumnVarNameInTable="columnCANTENTREA" msprop:Generator_ColumnPropNameInTable="CANTENTREAColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CANTENTREB" msprop:Generator_UserColumnName="CANTENTREB" msprop:Generator_ColumnPropNameInRow="CANTENTREB" msprop:Generator_ColumnVarNameInTable="columnCANTENTREB" msprop:Generator_ColumnPropNameInTable="CANTENTREBColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CANTENTREC" msprop:Generator_UserColumnName="CANTENTREC" msprop:Generator_ColumnPropNameInRow="CANTENTREC" msprop:Generator_ColumnVarNameInTable="columnCANTENTREC" msprop:Generator_ColumnPropNameInTable="CANTENTRECColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CANTSOLIC" msprop:Generator_UserColumnName="CANTSOLIC" msprop:Generator_ColumnPropNameInRow="CANTSOLIC" msprop:Generator_ColumnVarNameInTable="columnCANTSOLIC" msprop:Generator_ColumnPropNameInTable="CANTSOLICColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ANALISIS" msprop:Generator_UserColumnName="ANALISIS" msprop:Generator_ColumnPropNameInRow="ANALISIS" msprop:Generator_ColumnVarNameInTable="columnANALISIS" msprop:Generator_ColumnPropNameInTable="ANALISISColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PUESTO" msprop:Generator_UserColumnName="PUESTO" msprop:Generator_ColumnPropNameInRow="PUESTO" msprop:Generator_ColumnVarNameInTable="columnPUESTO" msprop:Generator_ColumnPropNameInTable="PUESTOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
