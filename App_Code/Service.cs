@@ -6314,6 +6314,12 @@ public class Service : System.Web.Services.WebService
                 ",(SELECT NOMBREC(NULL, NULL, 'I', 'N', NOMBRE1, NOMBRE2, PRIMAPE, SEGAPE) FROM PE WHERE CDGEM = PRN.CDGEM AND CODIGO = PRN.AUTCARPE) NOMAUT " +
                 ",(SELECT REPORTE FROM PRC_ANALISIS WHERE CDGEM = PRC.CDGEM AND CDGNS = PRC.CDGNS AND CICLO = PRC.CICLO AND CDGCL = PRC.CDGCL) COMENTARIOS " +
                 ",FNCALDIASATRASO(PRN.CDGEM,PRN.CDGNS,LPAD(TO_CHAR(TO_NUMBER(PRN.CICLO)),2,'0'),'G') DIASATRASO " +
+                ",CL.TELEFONO " +
+                ",(SELECT B.NOMBRE FROM DISPERSION D, BANCO B WHERE D.CDGEM = PRC.CDGEM AND D.CDGCLNS = PRC.CDGNS AND D.CICLO = PRC.CICLO AND D.CLNS = PRC.CLNS AND D.CDGCL = PRC.CDGCL AND D.BAJA IS NULL AND B.CODIGO = D.CDGBANCO) BANCO " +
+                ",(SELECT CLABE FROM DISPERSION D WHERE D.CDGEM = PRC.CDGEM AND D.CDGCLNS = PRC.CDGNS AND D.CICLO = PRC.CICLO AND D.CLNS = PRC.CLNS AND D.CDGCL = PRC.CDGCL AND D.BAJA IS NULL) CLABE " +
+                ",PUESTOACRED(PRC.CDGEM, PRC.CDGNS, PRC.CICLO, 'G', PRC.CDGCL) PUESTO " +
+                ",ROUND((PRC.CANTENTRE / PRN.CANTENTRE) * PARCIALIDADPRN(PRN.CDGEM, PRN.CDGNS, PRN.CICLO, NVL(PRN.CANTENTRE, PRN.CANTAUTOR), PRN.TASA, PRN.PLAZO, PRN.PERIODICIDAD, PRN.CDGMCI, PRN.INICIO, PRN.DIAJUNTA, PRN.MULTPER, PRN.PERIGRCAP, PRN.PERIGRINT, PRN.DESFASEPAGO, PRN.CDGTI, NULL), 2) PARCIALIDAD " +
+                ",DECODE(PRN.FORMAENTREGA,'E','EFECTIVO','I','CHEQUE POR ACREDITADO','G','CHEQUE GRUPAL','T','TRANSFERENCIA POR ACREDITADO','D','TRANSFERENCIA A LA TESORERA') FORMA_ENTREGA " +
                 "FROM PRN, " +
                 "PRC, " +
                 "NS, " +
@@ -8228,7 +8234,8 @@ public class Service : System.Web.Services.WebService
                 drMora["TIPO_CART"] = dref.Tables[0].Rows[i]["TIPO_CART"];
                 drMora["TIPOPROD"] = dref.Tables[0].Rows[i]["NOMTIPOPROD"];
                 drMora["DIAS_ATRASO"] = dref.Tables[0].Rows[i]["DIAS_ATRASO"];
-
+                drMora["DIA_PAGO"] = dref.Tables[0].Rows[i]["DIA_PAGO"];
+                drMora["FORMA_ENTREGA"] = dref.Tables[0].Rows[i]["FORMA_ENTREGA"];
                 dt.Rows.Add(drMora);
             }
             ds.Tables.Add(dt);
@@ -9885,6 +9892,8 @@ public class Service : System.Web.Services.WebService
                 drPrn["TIPOPROD"] = dref.Tables[0].Rows[i]["TIPOPROD"];
                 drPrn["REFINSPAG"] = dref.Tables[0].Rows[i]["REF_INS_PAG"];
                 drPrn["REFINSGAR"] = dref.Tables[0].Rows[i]["REF_INS_GAR"];
+                drPrn["DIA_PAGO"] = dref.Tables[0].Rows[i]["DIA_PAGO"];
+                drPrn["FORMA_ENTREGA"] = dref.Tables[0].Rows[i]["FORMA_ENTREGA"];
                 dt.Rows.Add(drPrn);
             }
 

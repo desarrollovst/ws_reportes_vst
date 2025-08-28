@@ -77,6 +77,8 @@
               <xs:element name="REFINSPAG" msprop:Generator_UserColumnName="REFINSPAG" msprop:Generator_ColumnVarNameInTable="columnREFINSPAG" msprop:Generator_ColumnPropNameInRow="REFINSPAG" msprop:Generator_ColumnPropNameInTable="REFINSPAGColumn" type="xs:string" minOccurs="0" />
               <xs:element name="REFINSGAR" msprop:Generator_UserColumnName="REFINSGAR" msprop:Generator_ColumnVarNameInTable="columnREFINSGAR" msprop:Generator_ColumnPropNameInRow="REFINSGAR" msprop:Generator_ColumnPropNameInTable="REFINSGARColumn" type="xs:string" minOccurs="0" />
               <xs:element name="DIAS_ATRASO" msprop:Generator_UserColumnName="DIAS_ATRASO" msprop:Generator_ColumnPropNameInRow="DIAS_ATRASO" msprop:Generator_ColumnVarNameInTable="columnDIAS_ATRASO" msprop:Generator_ColumnPropNameInTable="DIAS_ATRASOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DIA_PAGO" msprop:Generator_UserColumnName="DIA_PAGO" msprop:Generator_ColumnVarNameInTable="columnDIA_PAGO" msprop:Generator_ColumnPropNameInRow="DIA_PAGO" msprop:Generator_ColumnPropNameInTable="DIA_PAGOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FORMA_ENTREGA" msprop:Generator_UserColumnName="FORMA_ENTREGA" msprop:Generator_ColumnPropNameInRow="FORMA_ENTREGA" msprop:Generator_ColumnVarNameInTable="columnFORMA_ENTREGA" msprop:Generator_ColumnPropNameInTable="FORMA_ENTREGAColumn" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
